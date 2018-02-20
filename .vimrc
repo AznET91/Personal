@@ -1,1 +1,0 @@
-/Users/etang/.vimrc
