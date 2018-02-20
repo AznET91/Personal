@@ -1,6 +1,3 @@
-set nocompatible
-filetype plugin indent on
-
 "Set solarized colorscheme
 syntax enable
 if has('gui_running')
@@ -18,19 +15,22 @@ let g:solarized_contrast  = "normal"
 let g:solarized_visibility= "normal"
 colorscheme solarized
 
+filetype plugin indent on
+
+set nocompatible
 set nu
 set incsearch
 set mouse=a
-
 set tabstop=8
-"set expandtab
 set shiftwidth=8
 set smarttab
-
+"set expandtab
 set autoindent
 set smartindent
 
 :command Path :echo expand('%:p')
+
+:map <F2> <ESC>:exec &mouse!=""? "set mouse=" : "set mouse=nv"<CR>
 
 "Plugins
 call plug#begin()
