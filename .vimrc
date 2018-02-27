@@ -1,9 +1,12 @@
+filetype plugin indent on
+
+
 "Set solarized colorscheme
 syntax enable
 if has('gui_running')
-    set background=light
+        set background=light
 else
-    set background=dark
+        set background=dark
 endif
 let g:solarized_termcolors= 256
 let g:solarized_termtrans = 1
@@ -15,7 +18,6 @@ let g:solarized_contrast  = "normal"
 let g:solarized_visibility= "normal"
 colorscheme solarized
 
-filetype plugin indent on
 
 set nocompatible
 set nu
@@ -24,16 +26,20 @@ set mouse=a
 set tabstop=8
 set shiftwidth=8
 set smarttab
-"set expandtab
+set expandtab
 set autoindent
 set smartindent
 
-:command Path :echo expand('%:p')
 
-:map <F2> <ESC>:exec &mouse!=""? "set mouse=" : "set mouse=nv"<CR>
+command! Path :echo expand('%:p')
+
+
+map <F2> <ESC>:exec &mouse!=""? "set mouse=" : "set mouse=nv"<CR>
+
 
 "Plugins
 call plug#begin()
-filetype plugin on
-Plug 'scrooloose/nerdcommenter'
+        Plug 'tpope/vim-commentary'
+        Plug 'bling/vim-airline'
+        Plug 'valloric/youcompleteme'
 call plug#end()
