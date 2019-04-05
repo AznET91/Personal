@@ -11,9 +11,9 @@ function whatsize() {
 #Work stuff
 ibmhome="/gsa/ausgsa/home/e/t/etang/"
 
-alias ibm="ssh freezer4.austin.ibm.com"
+alias ibm="ssh freezer4.aus.stglabs.ibm.com"
 
 vim2ibm() {
-        sudo scp ~/.vimrc etang@freezer4.austin.ibm.com:/gsa/ausgsa/home/e/t/etang/
-        sudo scp -r ~/.vim etang@freezer4.austin.ibm.com:/gsa/ausgsa/home/e/t/etang/
+        sudo scp ~/.vimrc etang@freezer4.aus.stglabs.ibm.com:/gsa/ausgsa/home/e/t/etang/
+        sudo scp -r ~/.vim etang@freezer4.aus.stglabs.ibm.com:/gsa/ausgsa/home/e/t/etang/
 }
